@@ -43,7 +43,7 @@ namespace HotelListing.API.Controllers
         }
 
         // GET: api/Countries/5
-        [HttpGet($"{{{nameof(id)}}}")]
+        [HttpGet("id")]
         public async Task<ActionResult<CountryDto>> GetCountry(int id)
         {
             //if (_context.Countries == null)
